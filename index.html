@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RACI-Matrix Creator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>RACI-Matrix Creator</h1>
+        <div class="controls">
+            <button id="add-row">Add Role</button>
+            <button id="add-column">Add Task</button>
+            <button id="export-matrix">Export to CSV</button>
+        </div>
+        <div id="matrix-container">
+            <table id="raci-matrix">
+                <thead>
+                    <tr>
+                        <th>Role/Task</th>
+                        <th>Task 1</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td contenteditable="true">Role 1</td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
